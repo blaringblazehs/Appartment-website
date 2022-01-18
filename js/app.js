@@ -32,3 +32,18 @@ slide.addEventListener("transitionend", () => {
         slide.style.transform = "translateX(" + -size * counter + "px)";
     }
 });
+
+//floor plan btn
+function btn() {
+    let image = document.getElementById("flr-img");
+    let images = [
+        "images/floorplan.jpeg",
+        "images/floorplan1.jpeg",
+        "images/floorplan2.jpeg",
+        "images/floorplan3.jpeg",
+        "images/floorplan4.jpeg",
+        "images/floorplan5.jpeg",
+    ];
+    let random = Math.floor(Math.random() * 6);
+    image.src = images[random];
+}
